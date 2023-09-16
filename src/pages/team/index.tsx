@@ -2,7 +2,7 @@ import { images } from "@images";
 import { Sheet } from "@mui/joy";
 import { Grid, Typography, styled } from "@mui/material";
 import { useIntl } from "react-intl";
-import { TeamMembers } from "../../lib";
+import { TeamMembers } from "./lib";
 import Member from "./member";
 
 const Item = styled(Sheet)(({ theme }) => ({

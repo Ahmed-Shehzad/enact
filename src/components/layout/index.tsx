@@ -1,6 +1,6 @@
-import Body from "@components/body";
-import Footer from "@components/footer";
-import Navbar from "@components/nav";
+import Body from "@components/layout/body";
+import Footer from "@components/layout/footer";
+import Navbar from "@components/layout/nav";
 import { Container } from "@mui/material";
 import Head from "next/head";
 import { useRouter } from "next/router";
