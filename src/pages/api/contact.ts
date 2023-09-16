@@ -11,7 +11,7 @@ type ContactRequest = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ContactRequest>
+  res: NextApiResponse<ContactRequest>,
 ) {
   const { name, email, message } = req.body as ContactRequest;
 
