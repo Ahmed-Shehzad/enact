@@ -1,3 +1,4 @@
+import NotificationAlert from "@components/notification";
 import { TextareaAutosize } from "@mui/base";
 import {
   Box,
@@ -8,7 +9,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { FormEvent } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { SendMail } from "./service";
 
 type FormGroupTarget = {
   name: { value: string };
@@ -18,13 +20,41 @@ type FormGroupTarget = {
 type FormTarget = EventTarget & FormGroupTarget;
 
 const Contact = () => {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const [isMessageHasSent, setIsMessageHasSent] = useState(false);
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    const timer =
+      counter > 0 ? setInterval(() => setCounter(counter - 1), 1000) : counter;
+    if (counter === 0) {
+      setIsMessageHasSent(false);
+    }
+    return () => clearInterval(timer);
+  }, [counter, isMessageHasSent]);
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const target = event.target as FormTarget;
+
+    const { name, email, message } = target;
+
+    const contactResponse = await SendMail({
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    });
+
+    setIsMessageHasSent(contactResponse.status === 200);
+    setCounter(3);
   };
 
   return (
     <>
+      {isMessageHasSent ? (
+        <NotificationAlert message="Your Message has been sent" />
+      ) : (
+        <> </>
+      )}
       <Box component={"form"} onSubmit={(event) => handleSubmit(event)}>
         <FormGroup>
           <FormControl>

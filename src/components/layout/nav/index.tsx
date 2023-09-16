@@ -68,7 +68,7 @@ function Navbar() {
     },
   ];
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
+    null,
   );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {

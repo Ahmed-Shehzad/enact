@@ -2,7 +2,7 @@ import { AxiosInstance } from "axios";
 import { IIdentifier } from "./common/utils";
 
 export class BaseService<T extends IIdentifier> {
-  private readonly path: string = "/";
+  private path: string = "";
   constructor(private http: AxiosInstance) {
     if (this.http.defaults.baseURL) {
       this.path = this.http.defaults.baseURL;
@@ -17,7 +17,7 @@ export class BaseService<T extends IIdentifier> {
     return this.http.get<T>(`${this.path}/${id}`);
   }
 
-  create(data: T) {
+  create(data: Omit<T, "id">) {
     return this.http.post<T>(this.path, data);
   }
 
