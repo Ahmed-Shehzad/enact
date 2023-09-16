@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { FormEvent, useEffect, useState } from "react";
-import { SendMail } from "./service";
+import { ContactService } from "./service";
 
 type FormGroupTarget = {
   name: { value: string };
@@ -38,7 +38,7 @@ const Contact = () => {
 
     const { name, email, message } = target;
 
-    const contactResponse = await SendMail({
+    const contactResponse = await ContactService.SendMail({
       name: name.value,
       email: email.value,
       message: message.value,
