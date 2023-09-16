@@ -1,0 +1,78 @@
+{
+  "$page.main": "Unsere Welt steht vor Herausforderungen und ist durch folgende Faktoren gefährdet: Bevölkerungswachstum, Ressourcendruck, Urbanisierung, Klimawandel, Umweltzerstörung und Digitalisierung. Es besteht dringender Bedarf an tiefgreifender Planung und Maßnahmen für die Nachhaltigkeit. Wir arbeiten an der Schnittstelle zwischen Wissenschaft und Praxis und unterstützen Nachhaltigkeitsprozesse, liefern und bereiten Informationen auf und begleiten Organisationen, Unternehmen und Behörden auf dem Weg zu sinnvollem Handeln.",
+
+  "$page.home.head.title": "Startseite",
+  "$page.home.head.description": "Hausbeschreibung",
+  "$page.home.title": "Home Schlüsselwörter Titel",
+  "$page.home.description": "Home Keywords Beschreibung",
+
+  "$page.about.head.title": "Über uns",
+  "$page.about.head.description": "Über uns Beschreibung",
+  "$page.about.title": "Über uns Schlüsselwörter Titel",
+  "$page.about.description": "Über uns Schlüsselwörter Beschreibung",
+  "$page.about.content_heading_1": "Wer wir sind",
+  "$page.about.content_heading_2": "Wie wir arbeiten",
+  "$page.about.content_description_1": "Wir sind ein Team von Fachleuten, die in den Bereichen Umwelt, Klimawandel, Katastrophenforschung, Stadt- und Regionalplanung und nachhaltige Entwicklung arbeiten und über mehr als 10 Jahre Erfahrung verfügen. Wir sind an einer Vielzahl von Projekten und Forschungsaktivitäten in verschiedenen Bereichen beteiligt, die mit Umwelt, Klima und Planung zu tun haben. Wir arbeiten so, dass unsere Analysen und Vorschläge leicht umgesetzt werden können, und unterstützen Institutionen und politische Entscheidungsträger bei der Umsetzung von Maßnahmen. EnACT ist ein Spin-Off des Instituts für Raumordnung und Landesplanung (IREUS) und ist der TTI GmbH der Universität Stuttgart angegliedert. Dies garantiert den Transfer neuester wissenschaftlicher Erkenntnisse in eine sinnvolle handlungsorientierte Beratung.",
+  "$page.about.content_description_2": "EnACT bietet vielseitige thematische und regionale Expertise. Um einen bestmöglichen und maßgeschneiderten Service zu gewährleisten, arbeiten wir bei Bedarf mit unserem umfangreichen Netzwerk zusammen, das in verschiedenen Teilen der Welt mit Expertise in unterschiedlichen Bereichen von Wissenschaft und Praxis vertreten ist.",
+
+  "$page.team.head.title": "team",
+  "$page.team.head.description": "team Beschreibung",
+  "$page.team.title": "team Schlüsselwörter Titel",
+  "$page.team.description": "team Schlüsselwörter Beschreibung",
+
+  "$page.services.head.title": "Unsere Dienstleistungen",
+  "$page.services.head.description": "Beschreibung unserer Dienstleistungen",
+  "$page.services.title": "Unsere Dienstleistungen keywords title",
+  "$page.services.description": "Unsere Dienstleistungen Schlüsselwörter Beschreibung",
+  "$page.services.content_description": "Wir erarbeiten gemeinsam Lösungen im Bereich der gesamten Umwelt und konzentrieren uns auf menschliche und natürliche Bereiche. Unsere Dienstleistungen umfassen Folgen-, Verwundbarkeits- und Risikobewertungen, Politik zur Anpassung an den Klimawandel und dessen Abschwächung, Strategien und Maßnahmen zur Verringerung des Katastrophenrisikos, klimaverträgliche Planung und politisches Mainstreaming.",
+
+  "$page.services.content_key_areas_of_work": "Schlüsselbereiche der Arbeit",
+  "$page.services.content_concept": "Konzept- und Methodenentwicklung",
+  "$page.services.content_concept_description": "Entwicklung von konzeptionellen und analytischen Rahmen für die Bewertung und Lösung von Umweltproblemen, z. B. indexbasierte Bewertungen",
+
+  "$page.services.content_acquisition": "Datenerfassung",
+  "$page.services.content_acquisition_description_1": "Planung und Durchführung von Haushaltsbefragungen, Experteninterviews",
+  "$page.services.content_acquisition_description_2": "Sammlung von Sekundärinformationen von öffentlichen und privaten Stellen",
+  "$page.services.content_acquisition_description_3": "Erhebung von geografischen Daten",
+
+  "$page.services.content_assessments": "Einschätzungen",
+  "$page.services.content_assessments_description_1": "Umweltverträglichkeitsprüfung",
+  "$page.services.content_assessments_description_2": "Katastrophenfolgenabschätzung",
+  "$page.services.content_assessments_description_3": "Schwachstellen- und Risikobewertung",
+
+  "$page.services.content_evaluation": "Überwachung und Bewertung",
+  "$page.services.content_description_1": "Überwachung und Evaluierung von Politiken, Finanzierungsprogrammen und Projekten",
+
+  "$page.services.content_policy": "Planung und Politikumsetzung",
+  "$page.services.content_policy_1": "Entwicklung von politischen und technischen Konzepten",
+  "$page.services.content_policy_2": "Beratung und Prozessunterstützung",
+  "$page.services.content_policy_3": "Politik-Mainstreaming",
+
+  "$page.services.content_capacity": "Aufbau von Kapazitäten",
+  "$page.services.content_capacity_description_1": "Workshops, Schulungen, Unterricht",
+
+  "$page.references.head.title": "Referenzen",
+  "$page.references.head.description": "Referenzen Beschreibung",
+  "$page.references.title": "Referenzen Schlüsselwörter Titel",
+  "$page.references.Beschreibung": "Referenzen Schlüsselwörter Beschreibung",
+  "$page.references.content_heading_1": "Unsere Referenzen",
+
+  "$page.team.main": "Wir sind ein Team junger Fachleute, die auf dem Gebiet des Klimawandels und der nachhaltigen Entwicklung arbeiten und über mehr als 10 Jahre Erfahrung in einer Vielzahl internationaler Projekte und Forschungsarbeiten in diesem Bereich verfügen. Wir arbeiten mit unserem umfangreichen Netzwerk in verschiedenen Teilen der Welt zusammen.",
+
+  "$page.contact.head.title": "kontakt",
+  "$page.contact.head.description": "kontakt Beschreibung",
+  "$page.contact.title": "kontakt Schlüsselwörter Titel",
+  "$page.contact.description": "kontakt Schlüsselwörter Beschreibung",
+
+  "$page.copyright.head.title": "© Copyright",
+  "$page.copyright.head.description": "© Copyright Beschreibung",
+  "$page.copyright.disclaimer": "Haftungsausschluss",
+  "$page.copyright.disclaimer.section_1": "Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an {email}. Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Webseiten kann trotz sorgfältiger Prüfung nicht übernommen werden. Die TTI GmbH übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.",
+  "$page.copyright.disclaimer.link": "Linkdistanzierung",
+  "$page.copyright.disclaimer.section_2": "Die TTI GmbH ist als Inhaltsanbieter für die eigenen Inhalte, die sie zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich. Von diesen eigenen Inhalten sind Querverweise (“externe Links”) auf die von anderen Anbietern bereitgehaltenen Inhalte zu unterscheiden. Diese fremden Inhalte stammen weder von der TTI GmbH noch hat sie die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die TTI GmbH mittels Links hinweist, spiegeln nicht die Meinung der TTI GmbH wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen.",
+  "$page.copyright.disclaimer.section_3": "Die TTI GmbH distanziert sich hiermit ausdrücklich von allen Inhalten aller gelinkten fremden Seiten auf ihrer Website und macht sich deren Inhalte nicht zu Eigen. Diese Feststellungen gelten für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in die von der TTI GmbH eingerichteten Mailinglisten. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde.",
+  "$page.copyright": "Copyright Inhalt",
+  "$page.copyright.director": "Geschäftsführer",
+  "$page.copyright.local.court": "Amtsgericht",
+  "$page.copyright.registery.court": "Registergericht"
+}

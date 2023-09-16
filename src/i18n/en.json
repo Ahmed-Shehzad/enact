@@ -1,0 +1,77 @@
+{
+  "$page.main": "Our world faces challenges and is at risk due to: Population growth, pressure on resources, urbanization, climate change, environmental degradation and digitalization. There is urgent need for profound planning and action for sustainability. We operate at the interface between science and practice and support sustainability processes, deliver and prepare information and guide organizations, companies and authorities along the way for taking meaningful action.",
+
+  "$page.home.head.title": "Home",
+  "$page.home.head.description": "Home Description",
+  "$page.home.title": "Home Keywords Title",
+  "$page.home.description": "Home Keywords Description",
+
+  "$page.about.head.title": "About Us",
+  "$page.about.head.description": "About Us Description",
+  "$page.about.title": "About Us Keywords Title",
+  "$page.about.description": "About Us Keywords Description",
+  "$page.about.content_heading_1": "Who we are",
+  "$page.about.content_heading_2": "How we work",
+  "$page.about.content_description_1": "We are a team of professionals working in the field of environment, climate change, disaster studies, urban & regional planning and sustainable development with more than 10 years of experience. We are involved in a large number of projects and research activities in multiple sectors associated with the environment, climate and planning. We believe in working in a way that our analysis and suggestions can easily be implemented and support institutions and policymakers to ACT. EnACT is a spin-off of the Institute of Spatial and Regional Planning (IREUS) and is affiliated with the TTI GmbH of the University of Stuttgart. This guarantees the transfer of the newest scientific findings into meaningful action-oriented consultancy.",
+  "$page.about.content_description_2": "EnACT provides multifaceted thematic and regional expertise. To guarantee the best possible and tailor-made service, we collaborate where necessary with our extensive network present in different parts of the world with expertise in different areas of science and practice.",
+  "$page.team.head.title": "Team",
+  "$page.team.head.description": "Team Description",
+  "$page.team.title": "Team Keywords Title",
+  "$page.team.description": "Team Keywords Description",
+
+  "$page.services.head.title": "Our Services",
+  "$page.services.head.description": "Our Services description",
+  "$page.services.title": "Our Services keywords title",
+  "$page.services.description": "Our Services keywords description",
+  "$page.services.content_description": "We co-create solutions in the area of the total environment and focus on human and natural domains. Our services include impact, vulnerability and risk assessments, climate change adaptation and mitigation policy, disaster risk reduction strategies and measures, climate-compatible planning and political mainstreaming.",
+
+  "$page.services.content_key_areas_of_work": "Key areas of work",
+  "$page.services.content_concept": "Concept and Method development",
+  "$page.services.content_concept_description": "Developing conceptual and analytical frameworks for assessing and solving environmental problems e.g., index-based assessments",
+
+  "$page.services.content_acquisition": "Data Acquisition",
+  "$page.services.content_acquisition_description_1": "Designing and implementing household surveys, expert interviews",
+  "$page.services.content_acquisition_description_2": "Collection of secondary information from public and private offices",
+  "$page.services.content_acquisition_description_3": "Collection of geographic data",
+
+  "$page.services.content_assessments": "Assessments",
+  "$page.services.content_assessments_description_1": "Environmental Impact Assessment",
+  "$page.services.content_assessments_description_2": "Disaster Impact Assessment",
+  "$page.services.content_assessments_description_3": "Vulnerability and Risk Assessment",
+
+  "$page.services.content_evaluation": "Monitoring and Evaluation",
+  "$page.services.content_description_1": "Monitoring and evaluation of policies, funding programs and projects",
+
+  "$page.services.content_policy": "Planning & Policy Implementation",
+  "$page.services.content_policy_1": "Development of policy and technical concepts",
+  "$page.services.content_policy_2": "Consulting and process support",
+  "$page.services.content_policy_3": "Policy mainstreaming",
+
+  "$page.services.content_capacity": "Capacity building",
+  "$page.services.content_capacity_description_1": "workshops, trainings, teaching",
+
+  "$page.references.head.title": "References",
+  "$page.references.head.description": "References description",
+  "$page.references.title": "References keywords title",
+  "$page.references.description": "References keywords description",
+  "$page.references.content_heading_1": "Our References",
+
+  "$page.team.main": "We are a team of young professionals working in the field of climate change and sustainable development with more than 10 years of experience in a large number of international projects and research in the sector. We collaborate with our extensive network present in different parts of the world.",
+
+  "$page.contact.head.title": "Contact",
+  "$page.contact.head.description": "Contact description",
+  "$page.contact.title": "Contact keywords title",
+  "$page.contact.description": "Contact keywords description",
+
+  "$page.copyright.head.title": "© Copyright",
+  "$page.copyright.head.description": "© Copyright description",
+  "$page.copyright.disclaimer": "Disclaimer",
+  "$page.copyright.disclaimer.section_1": "The contents of this website are researched and implemented with the greatest possible care. Nevertheless, errors in the editing process cannot be ruled out. Please send any comments and corrections to {email}. Despite careful checking, no liability can be accepted for the accuracy, completeness and up-to-dateness of these web pages. In particular, TTI GmbH accepts no liability whatsoever for any damage or consequences arising from the direct or indirect use of the content provided.",
+  "$page.copyright.disclaimer.link": "Link distancing",
+  "$page.copyright.disclaimer.section_2": "As a content provider, TTI GmbH is responsible for its own content that it makes available for use in accordance with general laws. A distinction must be made between this own content and cross-references (“external links”) to content provided by other providers. This third-party content does not originate from TTI GmbH, nor does TTI GmbH have the possibility to influence the content of third-party sites. The content of external pages to which TTI GmbH refers by means of links does not reflect the opinion of TTI GmbH, but serves merely to provide information and to illustrate connections.",
+  "$page.copyright.disclaimer.section_3": "TTI GmbH hereby expressly distances itself from all content of all linked external pages on its website and does not adopt their content as its own. These statements apply to all links and references set within its own website as well as to third-party entries in mailing lists set up by TTI GmbH. For illegal, incorrect or incomplete content and in particular for damages resulting from the use or non-use of such information, only the provider of the linked page is liable.",
+  "$page.copyright": "Copyright Contents",
+  "$page.copyright.director": "Managing Director",
+  "$page.copyright.local.court": "Local Court",
+  "$page.copyright.registery.court": "Registry Court"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "enact",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:img": "tsc ./generators/image/index.ts && node ./generators/image/index.js && npx prettier . --write"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/joy": "^5.0.0-alpha.77",
+    "@mui/material": "^5.12.2",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@types/nodemailer": "^6.4.10",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.2",
+    "next": "^13.3.2",
+    "next-i18next": "^13.2.2",
+    "nodemailer": "^6.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.4.1",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-world-flags": "^1.5.1",
+    "sharp": "^0.32.5",
+    "styled-components": "^5.3.10",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "@types/react-world-flags": "^1.4.2",
+    "@types/styled-components": "^5.1.26",
+    "@types/uuid": "^9.0.1",
+    "prettier": "3.0.2",
+    "sass": "^1.67.0",
+    "ts-node": "^10.9.1",
+    "typescript": "5.2.2"
+  }
+}
