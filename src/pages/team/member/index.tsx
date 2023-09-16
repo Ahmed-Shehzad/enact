@@ -35,7 +35,7 @@ const MemberDescription = (props: MemberDescriptionProps) => {
 const Member = (props: MemberProps) => {
   const { name, description, imageUrl } = props;
   const [toggle, setToggle] = useState<boolean>(
-    description.split(" ").length > 10
+    description.split(" ").length > 10,
   );
 
   const isSmallScreen = useMediaQuery("(max-width:600px)");

@@ -1,6 +1,14 @@
-import axios, { AxiosHeaders, AxiosInstance } from "axios";
+import axios, {
+  AxiosHeaders,
+  AxiosInstance,
+  HeadersDefaults,
+  RawAxiosRequestHeaders,
+} from "axios";
 
-const http = (baseURL: string, headers: AxiosHeaders): AxiosInstance =>
+const http = (
+  baseURL: string,
+  headers: RawAxiosRequestHeaders | AxiosHeaders | Partial<HeadersDefaults>,
+): AxiosInstance =>
   axios.create({
     baseURL: baseURL,
     headers: headers,

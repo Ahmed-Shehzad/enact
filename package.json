@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gen:img": "tsc ./generators/image/index.ts && node ./generators/image/index.js && npx prettier . --write"
+    "gen:img": "tsc ./generators/image/index.ts && node ./generators/image/index.js && npx prettier . --write",
+    "all": "npm run gen:img && npm run lint && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",

@@ -1,39 +1,36 @@
-import axios, { AxiosInstance } from "axios";
+import { AxiosInstance } from "axios";
+import http from "./common";
 import { IIdentifier } from "./common/utils";
 
 export class BaseService<T extends IIdentifier> {
-  private http: AxiosInstance;
-
+  private httpRequest: AxiosInstance;
   constructor(private path: string = "") {
     const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
     const apiURL = `${baseURL}/api/${path}`;
 
-    this.http = axios.create({
-      baseURL: `${apiURL}`,
-      headers: {
-        "Content-type": "application/json",
-      },
+    this.httpRequest = http(`${apiURL}`, {
+      "Content-type": "application/json",
     });
   }
 
   findAll() {
-    return this.http.get<Array<T>>(this.path);
+    return this.httpRequest.get<Array<T>>(this.path);
   }
 
   findById(id: number | string) {
-    return this.http.get<T>(`${this.path}/${id}`);
+    return this.httpRequest.get<T>(`${this.path}/${id}`);
   }
 
   create(data: Omit<T, "id">) {
-    return this.http.post<T>(this.path, data);
+    return this.httpRequest.post<T>(this.path, data);
   }
 
   update(data: T) {
-    return this.http.put<T>(`${this.path}/${data.id}`, data);
+    return this.httpRequest.put<T>(`${this.path}/${data.id}`, data);
   }
 
   delete(id: number | string) {
-    return this.http.delete<T>(`${this.path}/${id}`);
+    return this.httpRequest.delete<T>(`${this.path}/${id}`);
   }
 }
 
