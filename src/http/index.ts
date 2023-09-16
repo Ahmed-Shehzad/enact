@@ -1,12 +1,19 @@
-import { AxiosInstance } from "axios";
+import axios, { AxiosInstance } from "axios";
 import { IIdentifier } from "./common/utils";
 
 export class BaseService<T extends IIdentifier> {
-  private path: string = "";
-  constructor(private http: AxiosInstance) {
-    if (this.http.defaults.baseURL) {
-      this.path = this.http.defaults.baseURL;
-    }
+  private http: AxiosInstance;
+
+  constructor(private path: string = "") {
+    const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+    const apiURL = `${baseURL}/api/${path}`;
+
+    this.http = axios.create({
+      baseURL: `${apiURL}`,
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
   }
 
   findAll() {
