@@ -9,8 +9,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { ContactService } from "@utils/contact/service";
 import { FormEvent, useEffect, useState } from "react";
-import { ContactService } from "./service";
 
 type FormGroupTarget = {
   name: { value: string };

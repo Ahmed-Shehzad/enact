@@ -2,7 +2,7 @@ import { IScreenDimensions } from "@components/layout/lib";
 import { ToggleText } from "@constants";
 import { Button, Typography } from "@mui/joy";
 import { Box, Grid, Skeleton, useMediaQuery } from "@mui/material";
-import { MemberProps } from "@pages/team/lib";
+import { MemberProps } from "@utils/team/lib";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -35,7 +35,7 @@ const MemberDescription = (props: MemberDescriptionProps) => {
 const Member = (props: MemberProps) => {
   const { name, description, imageUrl } = props;
   const [toggle, setToggle] = useState<boolean>(
-    description.split(" ").length > 10,
+    description.split(" ").length > 10
   );
 
   const isSmallScreen = useMediaQuery("(max-width:600px)");
