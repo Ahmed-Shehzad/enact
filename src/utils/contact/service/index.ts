@@ -8,11 +8,10 @@ interface IContact extends IIdentifier {
 }
 
 class ContactService extends BaseService<IContact> {
-  Host = (host: string) => {
+  SendMail = (host: string, data: Omit<IContact, "id">) => {
     super.setBaseURL(`${host}/api/contact`);
+    return contactService.create(data);
   };
-
-  SendMail = (data: Omit<IContact, "id">) => contactService.create(data);
 }
 
 const contactService = new ContactService();
