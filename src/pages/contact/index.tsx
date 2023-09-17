@@ -38,6 +38,8 @@ const Contact = () => {
 
     const { name, email, message } = target;
 
+    console.log(ContactService);
+
     const contactResponse = await ContactService.SendMail({
       name: name.value,
       email: email.value,
