@@ -44,7 +44,7 @@ const Contact = (props: ContactProps) => {
 
     const { name, email, message } = target;
 
-    const contactResponse = await ContactService.SendMail(LOCAL_HOST, {
+    const contactResponse = await ContactService.SendMail(host, {
       name: name.value,
       email: email.value,
       message: message.value,
