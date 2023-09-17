@@ -139,9 +139,8 @@ export const getServerSideProps: GetServerSideProps<ContactProps> = async (
     context.req.headers.host === undefined ||
     context.req.headers.host.includes("localhost")
       ? LOCAL_HOST
-      : context.req.headers.host;
+      : `https://${context.req.headers.host}`;
 
-  console.log(host);
   return { props: { host: host } };
 };
 
