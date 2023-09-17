@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { ContactService } from "@utils/contact/service";
 import { GetServerSideProps } from "next";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 
 type FormGroupTarget = {
   name: { value: string };
@@ -23,6 +23,7 @@ type FormTarget = EventTarget & FormGroupTarget;
 
 const Contact = (props: ContactProps) => {
   const { host } = props;
+  const contactFormRef = useRef<HTMLFormElement>(null);
 
   const [isMessageHasSent, setIsMessageHasSent] = useState<boolean | null>(
     null
@@ -50,8 +51,9 @@ const Contact = (props: ContactProps) => {
       message: message.value,
     });
 
-    setIsMessageHasSent(contactResponse.status === 200);
+    contactFormRef.current?.reset();
     setCounter(3);
+    setIsMessageHasSent(contactResponse.status === 200);
   };
 
   return (
@@ -61,7 +63,12 @@ const Contact = (props: ContactProps) => {
       ) : (
         <NotificationAlert show={isMessageHasSent} />
       )}
-      <Box component={"form"} onSubmit={(event) => handleSubmit(event)}>
+      <Box
+        id="contact"
+        component={"form"}
+        ref={contactFormRef}
+        onSubmit={(event) => handleSubmit(event)}
+      >
         <FormGroup>
           <FormControl>
             <TextField
@@ -112,6 +119,7 @@ const Contact = (props: ContactProps) => {
           <Grid container justifyContent={"flex-end"}>
             <Grid item>
               <Button
+                disabled={counter > 0}
                 type="submit"
                 style={{ width: "250px" }}
                 variant="contained"

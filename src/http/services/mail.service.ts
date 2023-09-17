@@ -1,14 +1,7 @@
-import { NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
-import StatusCode from "status-code-enum";
 
-const sendMail = (
-  response: NextApiResponse<any>,
-  name: string,
-  email: string,
-  message: string
-) => {
+const sendMail = async (name: string, email: string, message: string) => {
   const auth = {
     user: process.env.NODEMAILER_EMAIL ?? "",
     pass: process.env.NODEMAILER_PASSWORD ?? "",
@@ -30,20 +23,10 @@ const sendMail = (
     from: email,
     to: auth.user,
     subject: `Message From: ${name}`,
-    text: message,
+    text: `Email Address: ${email}\n\n${message}`,
   };
 
-  transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      console.error(err);
-      response
-        .status(StatusCode.ServerErrorInternal)
-        .json({ name, email, message });
-    } else {
-      console.info("The email was sent successfully");
-      response.status(StatusCode.SuccessOK).json({ name, email, message });
-    }
-  });
+  return await transporter.sendMail(mailOptions);
 };
 
 export { sendMail };
