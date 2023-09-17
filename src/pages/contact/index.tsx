@@ -24,14 +24,16 @@ type FormTarget = EventTarget & FormGroupTarget;
 const Contact = (props: ContactProps) => {
   const { host } = props;
 
-  const [isMessageHasSent, setIsMessageHasSent] = useState(false);
+  const [isMessageHasSent, setIsMessageHasSent] = useState<boolean | null>(
+    null
+  );
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     const timer =
       counter > 0 ? setInterval(() => setCounter(counter - 1), 1000) : counter;
     if (counter === 0) {
-      setIsMessageHasSent(false);
+      setIsMessageHasSent(null);
     }
     return () => clearInterval(timer);
   }, [counter, isMessageHasSent]);
@@ -54,10 +56,10 @@ const Contact = (props: ContactProps) => {
 
   return (
     <>
-      {isMessageHasSent ? (
-        <NotificationAlert message="Your Message has been sent" />
+      {isMessageHasSent === null ? (
+        <></>
       ) : (
-        <> </>
+        <NotificationAlert show={isMessageHasSent} />
       )}
       <Box component={"form"} onSubmit={(event) => handleSubmit(event)}>
         <FormGroup>

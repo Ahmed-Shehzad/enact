@@ -1,14 +1,17 @@
 import { Alert } from "@mui/material";
 
 interface INotificationAlertProps {
-  message: string;
+  show: boolean;
 }
 
 const NotificationAlert = (props: INotificationAlertProps) => {
-  const { message } = props;
+  const { show } = props;
+  const message = show
+    ? "Your Message has been sent"
+    : "There was an error occurred while sending your message";
 
   return (
-    <Alert severity="success" sx={{ mb: 2 }}>
+    <Alert severity={show ? "success" : "error"} sx={{ mb: 2 }}>
       {message}
     </Alert>
   );
