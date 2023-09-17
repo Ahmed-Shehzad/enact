@@ -10,12 +10,12 @@ interface IContact extends IIdentifier {
 class ContactService extends BaseService<IContact> {
   constructor() {
     const localhost = "http://localhost:3000";
-    const baseURL = process.env.NEXT_PUBLIC_BASE_URL ?? localhost;
+    const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
     let apiURL = "";
 
     if (baseURL === localhost) {
-      apiURL = `${baseURL}/api/contact`;
+      apiURL = `${localhost}/api/contact`;
     }
 
     super(apiURL);
