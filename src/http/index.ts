@@ -1,13 +1,20 @@
+import { LOCAL_HOST } from "@constants";
 import { AxiosInstance } from "axios";
 import http from "./common";
 import { IIdentifier } from "./common/utils";
 
 export class BaseService<T extends IIdentifier> {
   private httpRequest: AxiosInstance;
-  constructor(private path: string) {
-    console.log("path", path);
+  private path: string = "";
 
-    this.httpRequest = http(`${path}`, {
+  constructor() {
+    this.httpRequest = http(`${LOCAL_HOST}`, {
+      "Content-type": "application/json",
+    });
+  }
+  setBaseURL(baseURL: string) {
+    this.path = baseURL;
+    this.httpRequest = http(`${baseURL}`, {
       "Content-type": "application/json",
     });
   }

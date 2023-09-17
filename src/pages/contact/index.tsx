@@ -1,4 +1,5 @@
 import NotificationAlert from "@components/notification";
+import { LOCAL_HOST } from "@constants";
 import { TextareaAutosize } from "@mui/base";
 import {
   Box,
@@ -10,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { ContactService } from "@utils/contact/service";
+import { GetServerSideProps } from "next";
 import { FormEvent, useEffect, useState } from "react";
 
 type FormGroupTarget = {
@@ -19,7 +21,9 @@ type FormGroupTarget = {
 };
 type FormTarget = EventTarget & FormGroupTarget;
 
-const Contact = () => {
+const Contact = (props: ContactProps) => {
+  const { host } = props;
+
   const [isMessageHasSent, setIsMessageHasSent] = useState(false);
   const [counter, setCounter] = useState(0);
 
@@ -37,6 +41,8 @@ const Contact = () => {
     const target = event.target as FormTarget;
 
     const { name, email, message } = target;
+
+    ContactService.Host(host);
 
     console.log(ContactService);
 
@@ -122,6 +128,21 @@ const Contact = () => {
       </Box>
     </>
   );
+};
+
+type ContactProps = { host: string };
+
+export const getServerSideProps: GetServerSideProps<ContactProps> = async (
+  context
+) => {
+  const host =
+    context.req.headers.host === undefined ||
+    context.req.headers.host.includes("localhost")
+      ? LOCAL_HOST
+      : context.req.headers.host;
+
+  console.log(host);
+  return { props: { host: host } };
 };
 
 export default Contact;
