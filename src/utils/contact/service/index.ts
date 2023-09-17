@@ -9,9 +9,16 @@ interface IContact extends IIdentifier {
 
 class ContactService extends BaseService<IContact> {
   constructor() {
-    const url = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
-    const path = url.includes("http://localhost:3000") ? "contact" : "";
-    super(path);
+    const localhost = "http://localhost:3000";
+    const baseURL = process.env.NEXT_PUBLIC_BASE_URL ?? localhost;
+
+    let apiURL = "";
+
+    if (baseURL === localhost) {
+      apiURL = `${baseURL}/api/contact`;
+    }
+
+    super(apiURL);
   }
 
   SendMail = (data: Omit<IContact, "id">) => contactService.create(data);

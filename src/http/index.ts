@@ -4,11 +4,10 @@ import { IIdentifier } from "./common/utils";
 
 export class BaseService<T extends IIdentifier> {
   private httpRequest: AxiosInstance;
-  constructor(private path: string = "") {
-    const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-    const apiURL = `${baseURL}/api/${path}`;
+  constructor(private path: string) {
+    console.log("path", path);
 
-    this.httpRequest = http(`${apiURL}`, {
+    this.httpRequest = http(`${path}`, {
       "Content-type": "application/json",
     });
   }
